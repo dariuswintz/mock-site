@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <title>Fletcher‑Style Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Helvetica:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family: 'Helvetica', sans-serif; color:#333; }
+    .hero {
+      position: relative; height:80vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      display:flex; align-items:center; justify-content:center;
+      text-align:center;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size:4rem; color:white; margin:0;
+      text-shadow:0 2px 10px rgba(0,0,0,0.5);
+    }
+    nav {
+      position:fixed; top:0; width:100%; padding:1rem 2rem;
+      display:flex; justify-content:space-between;
+      background:rgba(255,255,255,0.8); backdrop-filter:blur(10px);
+    }
+    nav a { margin:0 1rem; font-weight:600; color:#333; text-decoration:none; }
+    .services {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:2rem; padding:4rem 2rem;
+      max-width:1200px; margin:0 auto;
+    }
+    .service {
+      background:#f9f9f9; padding:2rem; border-radius:8px;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .service h3 { margin-top:0; }
+    .btn {
+      display:inline-block; padding:.75rem 1.5rem;
+      background:#556B2F; color:white; text-decoration:none;
+      border-radius:4px; text-align:center;
+    }
+    footer {
+      background:#333; color:white; padding:2rem 1rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="#">BrandName</a></div>
+    <div class="menu">
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#book">Book Now</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Make A Bold Impression</h1>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service">
+      <h3>Scalp Massage & Treatment</h3>
+      <p>1 hour luxurious experience.</p>
+      <a class="btn" href="#book">Book</a>
+    </div>
+    <div class="service">
+      <h3>Simple Fade</h3>
+      <p>1 hour precision cut.</p>
+      <a class="btn" href="#book">Book</a>
+    </div>
+    <div class="service">
+      <h3>Consultation</h3>
+      <p>1 hour discussion and design.</p>
+      <a class="btn" href="#book">Book</a>
+    </div>
+  </section>
+
+  <section id="book" style="padding:4rem 2rem; text-align:center;">
+    <!-- Embed Acuity or Calendly widget here -->
+    <div id="acuity-booking">
+      <!-- Example: <iframe src="..." width="100%" height="600"></iframe> -->
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at email@example.com | (123) 456‑7890</p>
+    <p>&copy; 2025 BrandName</p>
+    <p>
+      <a href="#" style="color:#ccc;">Facebook</a> |
+      <a href="#" style="color:#ccc;">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
